@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScrollbarScript : MonoBehaviour
 {
-    private Vector3 startPos = new Vector3(-6, -2, 0);
+    private Vector3 startPos = new Vector3(0, 0, 0);
     public void Start()
     {
         transform.position = startPos;
@@ -12,6 +12,6 @@ public class ScrollbarScript : MonoBehaviour
 
     public void MoveCube(float sizeMultiplier)
     {
-        transform.localPosition = sizeMultiplier * Vector3.right;
+        transform.position = sizeMultiplier * Vector3.right;
     }
 }
